@@ -113,7 +113,7 @@ function CrmStepsTabsSection() {
                 aria-controls="radix-:r9:-content-ai"
                 data-state={activeTab === "ai" ? "active" : "inactive"}
                 id="radix-:r9:-trigger-ai"
-                className="disabled:text-muted-foreground data-[state=active]:border-primary data-[state=active]:text-foreground -mb-0.5 inline-flex items-center justify-start border-b-2 bg-transparent! px-10 py-2 text-base font-medium whitespace-nowrap transition-all first-of-type:ml-0 disabled:pointer-events-none data-[state=active]:rounded-t-xl data-[state=active]:bg-white data-[state=active]:font-semibold data-[state=inactive]:border-transparent"
+                className="disabled:text-muted-foreground data-[state=active]:text-foreground -mb-0.5 inline-flex items-center justify-start border-b-2 bg-transparent! px-10 py-2 text-base font-medium whitespace-nowrap transition-all first-of-type:ml-0 disabled:pointer-events-none data-[state=active]:rounded-t-xl data-[state=active]:border-orange-500 data-[state=active]:bg-white data-[state=active]:font-semibold data-[state=inactive]:border-transparent"
                 tabIndex={activeTab === "ai" ? 0 : -1}
                 data-orientation="horizontal"
                 data-radix-collection-item=""
@@ -128,7 +128,7 @@ function CrmStepsTabsSection() {
                 aria-controls="radix-:r9:-content-broadcast"
                 data-state={activeTab === "broadcast" ? "active" : "inactive"}
                 id="radix-:r9:-trigger-broadcast"
-                className="disabled:text-muted-foreground data-[state=active]:border-primary data-[state=active]:text-foreground -mb-0.5 inline-flex items-center justify-start border-b-2 bg-transparent! px-10 py-2 text-base font-medium whitespace-nowrap transition-all first-of-type:ml-0 disabled:pointer-events-none data-[state=active]:rounded-t-xl data-[state=active]:bg-white data-[state=active]:font-semibold data-[state=inactive]:border-transparent"
+                className="disabled:text-muted-foreground data-[state=active]:text-foreground -mb-0.5 inline-flex items-center justify-start border-b-2 bg-transparent! px-10 py-2 text-base font-medium whitespace-nowrap transition-all first-of-type:ml-0 disabled:pointer-events-none data-[state=active]:rounded-t-xl data-[state=active]:border-orange-500 data-[state=active]:bg-white data-[state=active]:font-semibold data-[state=inactive]:border-transparent"
                 tabIndex={activeTab === "broadcast" ? 0 : -1}
                 data-orientation="horizontal"
                 data-radix-collection-item=""
