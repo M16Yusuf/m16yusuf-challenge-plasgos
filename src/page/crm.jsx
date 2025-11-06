@@ -19,15 +19,9 @@ function crm() {
       <BackgroudGrid />
       <Navbar />
       <main className="flex flex-col gap-y-10">
-        <div className="flex w-full items-center justify-center">
-          <CrmHero />
-        </div>
-        <div className="w-full">
-          <CrmProblemSection />
-        </div>
-        <div className="flex w-full items-center justify-center bg-linear-to-b from-sky-50 via-orange-100 to-white">
-          <CrmSolutionSection />
-        </div>
+        <CrmHero />
+        <CrmProblemSection />
+        <CrmSolutionSection />
         <CrmStepsTabsSection />
         <CrmAiAgentSection />
         <CrmFeatureSection />

@@ -42,57 +42,59 @@ function CrmProblemSection() {
   ];
 
   return (
-    <div className="mx-auto flex w-full max-w-7xl flex-col gap-y-10 px-5 py-5">
-      <div className="flex w-full flex-col items-center justify-center gap-y-5">
-        <h1
-          className="font-raleway text-center text-2xl font-semibold md:text-4xl"
-          style={{ opacity: 1, transform: "none" }}
-        >
-          Apakah Anda Sedang Mengalami Masalah Ini ?
-        </h1>
-        <div className="flex w-full flex-wrap items-center justify-center md:justify-between">
-          <img
-            src="/crm/stress-pana-Dp6-KdCx.png"
-            alt="problem"
-            className="w-[220px] object-contain md:w-[320px]"
+    <div className="flex w-full items-center justify-center">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-y-10 px-5 py-5">
+        <div className="flex w-full flex-col items-center justify-center gap-y-5">
+          <h1
+            className="font-raleway text-center text-2xl font-semibold md:text-4xl"
             style={{ opacity: 1, transform: "none" }}
-          />
-          <div>
-            {problems1.map((problem, index) => (
-              <div
-                key={index}
-                className="my-3 flex items-center gap-x-3"
-                style={{ opacity: 1, transform: "none" }}
-              >
-                <div className="shrink-0">
-                  <XIcon />
+          >
+            Apakah Anda Sedang Mengalami Masalah Ini ?
+          </h1>
+          <div className="flex w-full flex-wrap items-center justify-center md:justify-between">
+            <img
+              src="/crm/stress-pana-Dp6-KdCx.png"
+              alt="problem"
+              className="w-[220px] object-contain md:w-[320px]"
+              style={{ opacity: 1, transform: "none" }}
+            />
+            <div>
+              {problems1.map((problem, index) => (
+                <div
+                  key={index}
+                  className="my-3 flex items-center gap-x-3"
+                  style={{ opacity: 1, transform: "none" }}
+                >
+                  <div className="shrink-0">
+                    <XIcon />
+                  </div>
+                  <p className="font-raleway text-lg">{problem}</p>
                 </div>
-                <p className="font-raleway text-lg">{problem}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col-reverse items-center justify-center md:flex-row md:justify-between">
-          <div>
-            {problems2.map((problem, index) => (
-              <div
-                key={index}
-                className="my-3 flex items-center gap-x-3"
-                style={{ opacity: 1, transform: "none" }}
-              >
-                <div className="shrink-0">
-                  <XIcon />
+          <div className="flex flex-col-reverse items-center justify-center md:flex-row md:justify-between">
+            <div>
+              {problems2.map((problem, index) => (
+                <div
+                  key={index}
+                  className="my-3 flex items-center gap-x-3"
+                  style={{ opacity: 1, transform: "none" }}
+                >
+                  <div className="shrink-0">
+                    <XIcon />
+                  </div>
+                  <p className="font-raleway text-lg">{problem}</p>
                 </div>
-                <p className="font-raleway text-lg">{problem}</p>
-              </div>
-            ))}
+              ))}
+            </div>
+            <img
+              src="/crm/money-stress-pana-Qo4xlV6q.png"
+              alt="problem"
+              className="w-[220px] object-contain md:w-[350px]"
+              style={{ opacity: 1, transform: "none" }}
+            />
           </div>
-          <img
-            src="/crm/money-stress-pana-Qo4xlV6q.png"
-            alt="problem"
-            className="w-[220px] object-contain md:w-[350px]"
-            style={{ opacity: 1, transform: "none" }}
-          />
         </div>
       </div>
     </div>

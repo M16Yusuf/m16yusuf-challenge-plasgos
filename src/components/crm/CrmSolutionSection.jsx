@@ -79,51 +79,53 @@ function CrmSolutionSection() {
   ];
 
   return (
-    <div
-      id="solusi"
-      className="mx-auto flex w-full max-w-7xl scroll-mt-[75px] flex-col gap-y-10 px-5 py-5"
-    >
-      <div className="flex w-full flex-col items-center justify-center gap-y-5">
-        <h1
-          className="font-raleway text-center text-2xl font-semibold md:text-4xl"
-          style={{ opacity: 1, transform: "none" }}
-        >
-          Tenang, Solusinya Sudah Kami Siapkan Untuk Anda
-        </h1>
-        <div className="mt-5 flex w-full flex-col justify-center gap-12 md:flex-row md:justify-between">
-          <div style={{ opacity: 1, transform: "none" }}>
-            {solutions1.map((solution, index) => (
-              <div key={index} className="my-3 flex items-center gap-x-3">
-                <div className="shrink-0">
-                  <CheckIcon />
+    <div className="flex w-full items-center justify-center bg-linear-to-b from-sky-50 via-orange-100 to-white">
+      <div
+        id="solusi"
+        className="mx-auto flex w-full max-w-7xl scroll-mt-[75px] flex-col gap-y-10 px-5 py-5"
+      >
+        <div className="flex w-full flex-col items-center justify-center gap-y-5">
+          <h1
+            className="font-raleway text-center text-2xl font-semibold md:text-4xl"
+            style={{ opacity: 1, transform: "none" }}
+          >
+            Tenang, Solusinya Sudah Kami Siapkan Untuk Anda
+          </h1>
+          <div className="mt-5 flex w-full flex-col justify-center gap-12 md:flex-row md:justify-between">
+            <div style={{ opacity: 1, transform: "none" }}>
+              {solutions1.map((solution, index) => (
+                <div key={index} className="my-3 flex items-center gap-x-3">
+                  <div className="shrink-0">
+                    <CheckIcon />
+                  </div>
+                  <div className="">
+                    <p className="font-raleway text-base font-semibold">
+                      {solution.title}
+                    </p>
+                    <p className="font-raleway text-muted-foreground text-sm">
+                      {solution.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="">
-                  <p className="font-raleway text-base font-semibold">
-                    {solution.title}
-                  </p>
-                  <p className="font-raleway text-muted-foreground text-sm">
-                    {solution.description}
-                  </p>
+              ))}
+            </div>
+            <div style={{ opacity: 1, transform: "none" }}>
+              {solutions2.map((solution, index) => (
+                <div key={index} className="my-3 flex items-center gap-x-3">
+                  <div className="shrink-0">
+                    <CheckIcon />
+                  </div>
+                  <div className="">
+                    <p className="font-raleway text-base font-semibold">
+                      {solution.title}
+                    </p>
+                    <p className="font-raleway text-muted-foreground text-sm">
+                      {solution.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-          <div style={{ opacity: 1, transform: "none" }}>
-            {solutions2.map((solution, index) => (
-              <div key={index} className="my-3 flex items-center gap-x-3">
-                <div className="shrink-0">
-                  <CheckIcon />
-                </div>
-                <div className="">
-                  <p className="font-raleway text-base font-semibold">
-                    {solution.title}
-                  </p>
-                  <p className="font-raleway text-muted-foreground text-sm">
-                    {solution.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
