@@ -1,5 +1,5 @@
-import BackgroudGrid from "./../components/crm/backgroudGrid";
-import Navbar from "./../components/crm/navbar";
+import BackgroudGrid from "./../components/crm/BackgroudGrid";
+import Navbar from "./../components/crm/Navbar";
 // main content page
 import CrmHero from "./../components/crm/hero";
 import CrmProblemSection from "./../components/crm/CrmProblemSection";
