@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,121 +14,208 @@ function Navbar() {
   }, []);
 
   return (
-    <div
-      className={`sticky top-0 z-50 flex h-[70px] w-full justify-center transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
-      }`}
-    >
-      <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between p-3">
-        <div className="w-[120px] cursor-pointer">
-          <img
-            src="/crm/plg-logo-D6Raik_a.png"
-            className="w-full object-contain"
-            alt="Logo"
-          />
+    <>
+      {/* navbar */}
+      <div
+        className={`sticky top-0 z-50 flex h-[70px] w-full justify-center transition-all duration-300 ${
+          isScrolled ? "bg-white shadow-md" : "bg-transparent"
+        }`}
+      >
+        <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between p-3">
+          <div className="w-[120px] cursor-pointer">
+            <img
+              src="/crm/plg-logo-D6Raik_a.png"
+              className="w-full object-contain"
+              alt="Logo"
+            />
+          </div>
+          <div className="hidden gap-x-12 md:flex">
+            <nav
+              aria-label="Main"
+              data-orientation="horizontal"
+              dir="ltr"
+              className="relative z-10 flex max-w-max flex-1 flex-col items-center justify-center"
+            >
+              <div style={{ position: "relative" }}>
+                <ul
+                  data-orientation="horizontal"
+                  className="group flex flex-1 list-none items-center justify-center space-x-1"
+                  dir="ltr"
+                >
+                  <div className="flex gap-x-5">
+                    <a href="#home">
+                      <p
+                        className="font-raleway hover:text-primary text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
+                        data-radix-collection-item=""
+                      >
+                        Home
+                      </p>
+                    </a>
+                    <a href="#solusi">
+                      <p
+                        className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
+                        data-radix-collection-item=""
+                      >
+                        Solusi
+                      </p>
+                    </a>
+                    <a href="#fitur">
+                      <p
+                        className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
+                        data-radix-collection-item=""
+                      >
+                        Fitur
+                      </p>
+                    </a>
+                    <a href="#pricing">
+                      <p
+                        className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
+                        data-radix-collection-item=""
+                      >
+                        Harga
+                      </p>
+                    </a>
+                    <a
+                      href="https://plasgos.co.id/crm/doc-api.html"
+                      target="_blank"
+                    >
+                      <p
+                        className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
+                        data-radix-collection-item=""
+                      >
+                        API Doc
+                      </p>
+                    </a>
+                  </div>
+                </ul>
+              </div>
+              <div className="absolute top-full left-0 flex justify-center"></div>
+            </nav>
+          </div>
+          <div className="hidden gap-x-3 md:flex">
+            <a
+              href="https://www.plasgos.co.id/login?p=https%3A%2F%2Fwww.plasgos.co.id%2Fcrm%2F"
+              className="block rounded border border-gray-300 bg-white px-6 py-2 text-black shadow-sm transition hover:bg-gray-100"
+            >
+              Login
+            </a>
+            <a
+              href="https://www.plasgos.co.id/register?p=https%3A%2F%2Fwww.plasgos.co.id%2Fcrm%2F"
+              className="rounded bg-orange-500 px-6 py-2 text-white transition hover:bg-orange-600"
+            >
+              Register
+            </a>
+          </div>
+          <button
+            type="button"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="radix-:r6:"
+            data-state="closed"
+            className="md:hidden"
+            onClick={() => setIsSidebarOpen(true)}
+          >
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              strokeWidth="0"
+              version="1.1"
+              viewBox="0 0 17 17"
+              className="transition-all duration-200 ease-in-out hover:scale-110"
+              height="24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g></g>
+              <path d="M16 2v2h-11v-2h11zM5 9h11v-2h-11v2zM5 14h11v-2h-11v2zM2 2c-0.552 0-1 0.447-1 1s0.448 1 1 1 1-0.447 1-1-0.448-1-1-1zM2 7c-0.552 0-1 0.447-1 1s0.448 1 1 1 1-0.447 1-1-0.448-1-1-1zM2 12c-0.552 0-1 0.447-1 1s0.448 1 1 1 1-0.447 1-1-0.448-1-1-1z"></path>
+            </svg>
+          </button>
         </div>
-        <div className="hidden gap-x-12 md:flex">
-          <nav
-            aria-label="Main"
-            data-orientation="horizontal"
-            dir="ltr"
-            className="relative z-10 flex max-w-max flex-1 flex-col items-center justify-center"
-          >
-            <div style={{ position: "relative" }}>
-              <ul
-                data-orientation="horizontal"
-                className="group flex flex-1 list-none items-center justify-center space-x-1"
-                dir="ltr"
-              >
-                <div className="flex gap-x-5">
-                  <a href="#home">
-                    <p
-                      className="font-raleway hover:text-primary text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
-                      data-radix-collection-item=""
-                    >
-                      Home
-                    </p>
-                  </a>
-                  <a href="#solusi">
-                    <p
-                      className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
-                      data-radix-collection-item=""
-                    >
-                      Solusi
-                    </p>
-                  </a>
-                  <a href="#fitur">
-                    <p
-                      className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
-                      data-radix-collection-item=""
-                    >
-                      Fitur
-                    </p>
-                  </a>
-                  <a href="#pricing">
-                    <p
-                      className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
-                      data-radix-collection-item=""
-                    >
-                      Harga
-                    </p>
-                  </a>
-                  <a
-                    href="https://plasgos.co.id/crm/doc-api.html"
-                    target="_blank"
-                  >
-                    <p
-                      className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
-                      data-radix-collection-item=""
-                    >
-                      API Doc
-                    </p>
-                  </a>
-                </div>
-              </ul>
-            </div>
-            <div className="absolute top-full left-0 flex justify-center"></div>
-          </nav>
-        </div>
-        <div className="hidden gap-x-3 md:flex">
-          <a
-            href="https://www.plasgos.co.id/login?p=https%3A%2F%2Fwww.plasgos.co.id%2Fcrm%2F"
-            className="block rounded border border-gray-300 bg-white px-6 py-2 text-black shadow-sm transition hover:bg-gray-100"
-          >
-            Login
-          </a>
-          <a
-            href="https://www.plasgos.co.id/register?p=https%3A%2F%2Fwww.plasgos.co.id%2Fcrm%2F"
-            className="rounded bg-orange-500 px-6 py-2 text-white transition hover:bg-orange-600"
-          >
-            Register
-          </a>
-        </div>
-        <button
-          type="button"
-          aria-haspopup="dialog"
-          aria-expanded="false"
-          aria-controls="radix-:r6:"
-          data-state="closed"
-          className="md:hidden"
-        >
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            strokeWidth="0"
-            version="1.1"
-            viewBox="0 0 17 17"
-            className="transition-all duration-200 ease-in-out hover:scale-110"
-            height="24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g></g>
-            <path d="M16 2v2h-11v-2h11zM5 9h11v-2h-11v2zM5 14h11v-2h-11v2zM2 2c-0.552 0-1 0.447-1 1s0.448 1 1 1 1-0.447 1-1-0.448-1-1-1zM2 7c-0.552 0-1 0.447-1 1s0.448 1 1 1 1-0.447 1-1-0.448-1-1-1zM2 12c-0.552 0-1 0.447-1 1s0.448 1 1 1 1-0.447 1-1-0.448-1-1-1z"></path>
-          </svg>
-        </button>
       </div>
-    </div>
+
+      {/* sidbar drawer */}
+      <div
+        className={`fixed top-0 right-0 z-60 h-full w-64 transform bg-white shadow-lg transition-transform duration-300 ${
+          isSidebarOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex h-full flex-col p-5">
+          {/* Close Button */}
+          <button
+            onClick={() => setIsSidebarOpen(false)}
+            className="mb-5 self-end"
+          >
+            <span className="text-xl font-bold">&times;</span>
+          </button>
+
+          {/* Sidebar Navigation */}
+          <nav className="flex flex-col gap-y-4">
+            <a
+              href="#home"
+              className="hover:text-primary text-lg font-semibold text-gray-700"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Home
+            </a>
+            <a
+              href="#solusi"
+              className="hover:text-primary text-lg font-semibold text-gray-700"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Solusi
+            </a>
+            <a
+              href="#fitur"
+              className="hover:text-primary text-lg font-semibold text-gray-700"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Fitur
+            </a>
+            <a
+              href="#pricing"
+              className="hover:text-primary text-lg font-semibold text-gray-700"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Harga
+            </a>
+            <a
+              href="https://plasgos.co.id/crm/doc-api.html"
+              target="_blank"
+              className="hover:text-primary text-lg font-semibold text-gray-700"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              API Doc
+            </a>
+          </nav>
+
+          {/* Sidebar Auth Buttons */}
+          <div className="mt-auto flex flex-col gap-y-3 pt-10">
+            <a
+              href="https://www.plasgos.co.id/login?p=https%3A%2F%2Fwww.plasgos.co.id%2Fcrm%2F"
+              className="rounded border border-gray-300 bg-white px-6 py-2 text-black hover:bg-gray-100"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Login
+            </a>
+            <a
+              href="https://www.plasgos.co.id/register?p=https%3A%2F%2Fwww.plasgos.co.id%2Fcrm%2F"
+              className="rounded bg-orange-500 px-6 py-2 text-white hover:bg-orange-600"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Register
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Overlay */}
+      {isSidebarOpen && (
+        <div
+          className="fixed inset-0 z-30 bg-[rgb(0,0,0,0.7)]"
+          onClick={() => setIsSidebarOpen(false)}
+        ></div>
+      )}
+    </>
   );
 }
 
