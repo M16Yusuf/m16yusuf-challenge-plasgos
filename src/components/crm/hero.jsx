@@ -2,7 +2,7 @@ function hero() {
   return (
     <div
       id="home"
-      className="mx-auto flex min-h-[598px] w-full max-w-7xl scroll-mt-96 flex-col justify-center gap-y-10 px-5 py-5"
+      className="mx-auto flex min-h-[630px] w-full max-w-7xl scroll-mt-96 flex-col justify-center gap-y-10 px-5 py-5"
     >
       <div className="relative flex flex-col gap-y-5 p-3 md:p-10">
         {/* Floating Avatar 1 */}
