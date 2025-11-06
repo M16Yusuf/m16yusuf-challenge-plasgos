@@ -188,7 +188,7 @@ function CrmAdvanceFeature() {
           {/* Toggle Button */}
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="focus-visible:ring-ring bg-primary text-primary-foreground hover:bg-primary/90 mx-auto inline-flex h-10 items-center justify-center gap-2 rounded-md px-8 text-sm font-medium whitespace-nowrap shadow transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
+            className="focus-visible:ring-ring hover:bg-primary/90 mx-auto inline-flex h-10 items-center justify-center gap-2 rounded-md bg-orange-500 px-8 text-sm font-medium whitespace-nowrap text-white shadow transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
           >
             {isExpanded
               ? "Lihat Sedikit Fitur"
