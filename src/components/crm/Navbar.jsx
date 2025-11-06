@@ -1,8 +1,23 @@
-import React from "react";
+import { useEffect, useState } from "react";
 
 function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="sticky top-0 z-50 h-[70px] w-full bg-transparent transition-all duration-300">
+    <div
+      className={`sticky top-0 z-50 flex h-[70px] w-full justify-center transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      }`}
+    >
       <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between p-3">
         <div className="w-[120px] cursor-pointer">
           <img
@@ -25,46 +40,49 @@ function Navbar() {
                 dir="ltr"
               >
                 <div className="flex gap-x-5">
-                  <li>
+                  <a href="#home">
                     <p
                       className="font-raleway hover:text-primary text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
                       data-radix-collection-item=""
                     >
                       Home
                     </p>
-                  </li>
-                  <li>
+                  </a>
+                  <a href="#solusi">
                     <p
                       className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
                       data-radix-collection-item=""
                     >
                       Solusi
                     </p>
-                  </li>
-                  <li>
+                  </a>
+                  <a href="#fitur">
                     <p
                       className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
                       data-radix-collection-item=""
                     >
                       Fitur
                     </p>
-                  </li>
-                  <li>
+                  </a>
+                  <a href="#pricing">
                     <p
                       className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
                       data-radix-collection-item=""
                     >
                       Harga
                     </p>
-                  </li>
-                  <li>
+                  </a>
+                  <a
+                    href="https://plasgos.co.id/crm/doc-api.html"
+                    target="_blank"
+                  >
                     <p
                       className="font-raleway hover:text-primary cursor-pointer font-semibold transition-all duration-200 ease-in-out lg:mx-5"
                       data-radix-collection-item=""
                     >
                       API Doc
                     </p>
-                  </li>
+                  </a>
                 </div>
               </ul>
             </div>
