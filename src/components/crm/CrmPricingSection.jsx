@@ -162,7 +162,7 @@ function CrmPricingSection() {
   return (
     <div
       id="pricing"
-      className="flex w-full flex-col items-center justify-center gap-y-5"
+      className="flex w-full scroll-mt-[75px] flex-col items-center justify-center gap-y-5"
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-y-10 px-5 py-5">
         <div className="relative flex h-full w-full justify-center">

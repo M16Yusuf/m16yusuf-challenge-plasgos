@@ -79,7 +79,10 @@ function CrmSolutionSection() {
   ];
 
   return (
-    <div className="mx-auto flex w-full max-w-7xl flex-col gap-y-10 px-5 py-5">
+    <div
+      id="solusi"
+      className="mx-auto flex w-full max-w-7xl scroll-mt-[75px] flex-col gap-y-10 px-5 py-5"
+    >
       <div className="flex w-full flex-col items-center justify-center gap-y-5">
         <h1
           className="font-raleway text-center text-2xl font-semibold md:text-4xl"
