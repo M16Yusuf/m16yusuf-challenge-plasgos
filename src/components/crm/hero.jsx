@@ -1,6 +1,9 @@
 function hero() {
   return (
-    <div className="mx-auto flex w-full max-w-7xl flex-col gap-y-10 px-5 py-5">
+    <div
+      id="home"
+      className="mx-auto flex min-h-[598px] w-full max-w-7xl scroll-mt-96 flex-col justify-center gap-y-10 px-5 py-5"
+    >
       <div className="relative flex flex-col gap-y-5 p-3 md:p-10">
         {/* Floating Avatar 1 */}
         <div className="absolute left-5 animate-bounce">
@@ -107,7 +110,7 @@ function hero() {
         </div>
 
         {/* Main Content */}
-        <div className="my-20 flex flex-col justify-center gap-y-6 md:my-20 md:items-center">
+        <div className="z-10 my-20 flex flex-col justify-center gap-y-6 md:my-20 md:items-center">
           {/* AI Badge */}
           <div className="flex w-max items-center justify-center gap-x-2 rounded-lg border border-slate-300 p-2">
             <p className="text-xs">Powered By AI</p>

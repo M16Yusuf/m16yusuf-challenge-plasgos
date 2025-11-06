@@ -19,7 +19,7 @@ function crm() {
       <BackgroudGrid />
       <Navbar />
       <main className="flex flex-col gap-y-10">
-        <div className="flex min-h-[calc(100vh-70px)] w-full items-center justify-center pt-20">
+        <div className="flex w-full items-center justify-center">
           <CrmHero />
         </div>
         <div className="w-full">
