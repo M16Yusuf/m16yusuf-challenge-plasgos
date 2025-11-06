@@ -90,15 +90,17 @@ function Navbar() {
           </nav>
         </div>
         <div className="hidden gap-x-3 md:flex">
-          <a href="https://www.plasgos.co.id/login?p=https%3A%2F%2Fwww.plasgos.co.id%2Fcrm%2F">
-            <button className="focus-visible:ring-ring border-input bg-background hover:bg-accent hover:text-accent-foreground inline-flex h-9 items-center justify-center gap-2 rounded-md border px-4 py-2 text-sm font-medium whitespace-nowrap shadow-sm transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
-              Login
-            </button>
+          <a
+            href="https://www.plasgos.co.id/login?p=https%3A%2F%2Fwww.plasgos.co.id%2Fcrm%2F"
+            className="block rounded border border-gray-300 bg-white px-6 py-2 text-black shadow-sm transition hover:bg-gray-100"
+          >
+            Login
           </a>
-          <a href="https://www.plasgos.co.id/register?p=https%3A%2F%2Fwww.plasgos.co.id%2Fcrm%2F">
-            <button className="focus-visible:ring-ring bg-primary text-primary-foreground hover:bg-primary/90 inline-flex h-9 items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium whitespace-nowrap shadow transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
-              Register
-            </button>
+          <a
+            href="https://www.plasgos.co.id/register?p=https%3A%2F%2Fwww.plasgos.co.id%2Fcrm%2F"
+            className="rounded bg-orange-500 px-6 py-2 text-white transition hover:bg-orange-600"
+          >
+            Register
           </a>
         </div>
         <button
