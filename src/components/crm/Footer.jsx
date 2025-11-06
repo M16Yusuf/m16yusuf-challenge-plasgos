@@ -43,11 +43,11 @@ function Footer() {
     },
   ];
   return (
-    <div className="border-t bg-gray-50">
+    <div className="border-t border-gray-300 bg-gray-50">
       <div className="mx-auto my-5 flex max-w-7xl flex-col gap-10 p-3 md:flex-row md:justify-between">
         <div className="-mt-5 flex max-w-[300px] flex-col gap-y-5">
           <img
-            src="/crm/assets/plg-logo-D6Raik_a.png"
+            src="/crm/plg-logo-D6Raik_a.png"
             className="w-32 object-contain"
             alt="Plasgos Logo"
           />
@@ -115,7 +115,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center border-t p-5">
+      <div className="flex items-center justify-center border-t border-gray-300 p-5">
         <p className="font-raleway">© 2025 Plasgos. Hak Cipta Dilindungi</p>
       </div>
     </div>
