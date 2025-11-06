@@ -1,4 +1,4 @@
-import { CircleCheckBig, CircleX, Star } from "lucide-react";
+import { CircleCheckBig, CircleX, Star, ChevronRight } from "lucide-react";
 
 function CrmPricingSection() {
   const pricingPlans = [
@@ -184,7 +184,7 @@ function CrmPricingSection() {
                 {pricingPlans.map((plan, index) => (
                   <div
                     key={index}
-                    className={`text-card-foreground relative flex w-full flex-col justify-between rounded-xl border bg-white shadow ${
+                    className={`text-card-foreground relative flex w-full flex-col justify-between rounded-xl border border-gray-200 bg-white shadow-lg ${
                       plan.isMostPopular ? "ring-primary ring-1" : ""
                     }`}
                   >
@@ -197,7 +197,7 @@ function CrmPricingSection() {
                           right: "0px",
                         }}
                       >
-                        <div className="focus:ring-ring ring-primary -mt-10 inline-flex items-center rounded-xl border border-transparent bg-white px-3 py-2 text-base font-semibold text-black shadow ring-1 transition-colors hover:bg-white focus:ring-2 focus:ring-offset-2 focus:outline-none">
+                        <div className="focus:ring-ring -mt-10 inline-flex items-center rounded-xl border border-transparent bg-white px-3 py-2 text-base font-semibold text-black shadow ring-1 ring-orange-500 transition-colors hover:bg-white focus:ring-2 focus:ring-offset-2 focus:outline-none">
                           <Star className="mr-2 text-yellow-500" />
                           Most Popular
                         </div>
@@ -226,7 +226,7 @@ function CrmPricingSection() {
                               </p>
                             )}
                             {plan.discount && (
-                              <div className="focus:ring-ring text-primary-foreground hover:bg-primary/80 bg-primary/80 inline-flex items-center rounded-md border border-transparent px-2.5 py-0.5 text-xs font-semibold shadow transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none">
+                              <div className="focus:ring-ring inline-flex items-center rounded-md border border-transparent bg-orange-400 px-2.5 py-0.5 text-xs font-semibold text-white shadow transition-colors hover:bg-orange-500 focus:ring-2 focus:ring-offset-2 focus:outline-none">
                                 {plan.discount}
                               </div>
                             )}
@@ -258,15 +258,15 @@ function CrmPricingSection() {
 
                         {/* CTA Button */}
                         <div className="mb-3 p-6 pt-0">
-                          <button className="focus-visible:ring-ring bg-primary text-primary-foreground hover:bg-primary/90 inline-flex h-10 w-full items-center justify-center gap-2 rounded-md px-8 text-sm font-medium whitespace-nowrap shadow transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
+                          <button className="focus-visible:ring-ring hover:bg-primary/90 inline-flex h-10 w-full items-center justify-center gap-2 rounded-md bg-orange-500 px-8 text-sm font-medium whitespace-nowrap text-white shadow transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
                             Pilih Paket
                           </button>
 
                           {/* Features Section */}
                           <div className="my-4 flex items-center justify-center gap-x-5">
-                            <hr className="w-full text-black" />
+                            <hr className="w-full text-gray-300" />
                             <p className="font-semibold">Features</p>
-                            <hr className="w-full text-black" />
+                            <hr className="w-full text-gray-300" />
                           </div>
 
                           <div className="flex flex-col gap-y-3">
@@ -292,9 +292,9 @@ function CrmPricingSection() {
                     <div>
                       <div className="p-6 pt-0">
                         <div className="my-4 flex items-center justify-center gap-x-5">
-                          <hr className="w-full text-black" />
+                          <hr className="w-full text-gray-300" />
                           <p className="font-semibold">Contacts</p>
-                          <hr className="w-full text-black" />
+                          <hr className="w-full text-gray-300" />
                         </div>
                         <div className="flex flex-col gap-y-3">
                           {plan.contacts.map((contact, idx) => (
@@ -325,9 +325,9 @@ function CrmPricingSection() {
                     <div>
                       <div className="p-6 pt-0">
                         <div className="my-4 flex items-center justify-center gap-x-5">
-                          <hr className="w-full text-black" />
+                          <hr className="w-full text-gray-300" />
                           <p className="font-semibold">Support</p>
-                          <hr className="w-full text-black" />
+                          <hr className="w-full text-gray-300" />
                         </div>
                         <div className="flex flex-col gap-y-3">
                           {plan.support.map((sup, idx) => (
@@ -357,7 +357,7 @@ function CrmPricingSection() {
                     {/* Bottom Divider */}
                     <div className="flex items-center p-6 pt-0">
                       <div className="w-full">
-                        <hr className="my-5 w-full" />
+                        <hr className="my-5 w-full text-gray-300" />
                       </div>
                     </div>
                   </div>
@@ -365,16 +365,11 @@ function CrmPricingSection() {
               </div>
 
               {/* View More Button */}
+
               <div className="mt-3 flex items-center justify-center">
-                <button className="buttonshine">
+                <button className="inline-flex transform items-center justify-center gap-2 rounded-full bg-[#0451a5] px-8 py-3 font-semibold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:bg-blue-700 hover:shadow-xl">
                   Lihat paket lainnya
-                  <svg className="icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                      fillRule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
+                  <ChevronRight size={20} />
                 </button>
               </div>
             </div>
