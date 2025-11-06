@@ -2,7 +2,7 @@ function CrmContactUsSection() {
   return (
     <div className="flex w-full justify-center bg-linear-to-b from-white via-sky-100 to-white">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-y-10 px-5 py-5">
-        <div className="mx-auto max-w-5xl rounded-xl border p-5 shadow-xl">
+        <div className="mx-auto max-w-5xl rounded-xl border border-gray-200 p-5 shadow-xl">
           <div className="flex flex-col items-center gap-10 md:flex-row">
             {/* Text Content */}
             <div className="flex flex-col gap-y-5 pl-5">
