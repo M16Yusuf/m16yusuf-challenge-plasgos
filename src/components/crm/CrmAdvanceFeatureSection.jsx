@@ -125,7 +125,7 @@ function CrmAdvanceFeature() {
   return (
     <div
       id="fitur"
-      className="w-full scroll-mt-[75px] bg-linear-to-b from-white via-sky-100 to-white"
+      className="flex w-full scroll-mt-[75px] justify-center bg-linear-to-b from-white via-sky-100 to-white"
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-y-10 px-5 py-5">
         <div className="my-10 flex flex-col items-center gap-y-10">

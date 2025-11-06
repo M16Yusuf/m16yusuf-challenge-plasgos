@@ -53,7 +53,7 @@ function CrmFaqSection() {
     setOpenIndex(openIndex === index ? -1 : index);
   };
   return (
-    <div className="w-full">
+    <div className="flex w-full justify-center">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-y-10 px-5 py-5">
         <div className="my-10 flex flex-col items-center gap-y-10">
           <p className="font-raleway text-center text-2xl font-semibold md:text-3xl">

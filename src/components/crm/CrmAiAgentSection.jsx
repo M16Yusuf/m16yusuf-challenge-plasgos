@@ -153,7 +153,7 @@ function CrmAiAgentSection() {
     },
   ];
   return (
-    <div className="relative">
+    <div className="relative flex justify-center">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-y-10 px-5 py-5">
         <div className="flex flex-col justify-between gap-10 md:flex-row">
           {/* Left Content */}

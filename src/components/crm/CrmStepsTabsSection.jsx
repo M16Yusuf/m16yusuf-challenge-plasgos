@@ -87,7 +87,7 @@ function CrmStepsTabsSection() {
     // ai agent : w-full rounded-xl bg-gradient-to-b from-white via-sky-100 to-white bg-sky-200
     // broadcast: w-full rounded-xl bg-gradient-to-b from-white via-orange-100 to-white
     <div
-      className={`${activeTab == "ai" ? "bg-sky-200 via-sky-100 to-white" : "via-orange-100 to-white"} w-full rounded-xl bg-linear-to-b from-white`}
+      className={`${activeTab == "ai" ? "bg-sky-200 via-sky-100 to-white" : "via-orange-100 to-white"} flex w-full justify-center rounded-xl bg-linear-to-b from-white`}
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-y-10 px-5 py-5">
         <div className="flex flex-col items-center justify-center gap-y-10 md:justify-start">
@@ -181,7 +181,10 @@ function CrmStepsTabsSection() {
                           className={
                             index === 0 ? "mr-5 ml-auto" : "mr-auto ml-5"
                           }
-                          style={{ opacity: 0, transform: "translateY(30px)" }}
+                          style={{
+                            opacity: 0,
+                            transform: "translateY(30px)",
+                          }}
                         >
                           <ArrowIcon className="rotate-90" />
                         </div>
@@ -240,7 +243,9 @@ function CrmStepsTabsSection() {
               id="radix-:r9:-content-broadcast"
               tabIndex="0"
               className="ring-offset-background focus-visible:ring-ring mt-10 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
-              style={{ display: activeTab === "broadcast" ? "block" : "none" }}
+              style={{
+                display: activeTab === "broadcast" ? "block" : "none",
+              }}
               hidden={activeTab !== "broadcast"}
             >
               <div className="block md:hidden">
@@ -276,7 +281,10 @@ function CrmStepsTabsSection() {
                           className={
                             index === 0 ? "mr-5 ml-auto" : "mr-auto ml-5"
                           }
-                          style={{ opacity: 0, transform: "translateY(30px)" }}
+                          style={{
+                            opacity: 0,
+                            transform: "translateY(30px)",
+                          }}
                         >
                           <ArrowIcon className="rotate-90" />
                         </div>
