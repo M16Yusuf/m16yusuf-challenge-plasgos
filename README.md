@@ -1,16 +1,30 @@
-# React + Vite
+# Coding Challenge Plasgos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![badge react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![badge tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![badge javascsipt](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-Currently, two official plugins are available:
+This project is coding challenge for Technical Interview for **Plasgos**.
+Make same display with [plasgos/crm](https://plasgos.co.id/crm/) web with react.js and tailwind css.
+[https://plasgos.co.id/crm/](https://plasgos.co.id/crm/).
+Deadline 18:00 Thursday 06/11/2025 WIB.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Tech Stack
 
-## React Compiler
+- [React.js](https://react.dev/)
+- [tailwind](https://tailwindcss.com/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 DEMO
 
-## Expanding the ESLint configuration
+[https://m16yusuf-challenge-plasgos.vercel.app/](https://m16yusuf-challenge-plasgos.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📄 LICENSE
+
+MIT License
+
+Copyright (c) 2025 Muhammad Yusuf m16yusuf
+
+## 📧 Contact Info
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/m16yusuf/)
