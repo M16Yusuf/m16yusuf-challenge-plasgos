@@ -33,19 +33,53 @@ function CrmFaqSection() {
     },
     {
       question: "Apakah Plasgos CRM Cocok untuk Saya?",
-      answer: null,
+      answer: (
+        <div>
+          <p className="text-muted-foreground pt-0 pb-4 text-balance">
+            Kalau kamu ingin jualan lebih cepat, otomatis, dan efisien —
+            jawabannya: cocok banget! Plasgos ideal untuk pemilik bisnis online,
+            UMKM, agensi, hingga tim CS yang kewalahan handle chat manual. Satu
+            dashboard, semua beres: dari broadcast, chat, CRM, sampai follow-up.
+          </p>
+        </div>
+      ),
     },
     {
       question: "Apa Bedanya Plasgos dengan Tool WhatsApp Lainnya?",
-      answer: null,
+      answer: (
+        <div>
+          <p className="text-muted-foreground pt-0 pb-4 text-balance">
+            Plasgos bukan hanya tool kirim pesan — tapi sistem cerdas dengan AI
+            chatbot, CRM pelanggan, integrasi eksternal, dan insight performa.
+            Jadi bukan sekadar “blast”, tapi solusi end-to-end.
+          </p>
+        </div>
+      ),
     },
     {
       question: "Apakah Saya Perlu Menginstal Aplikasi di Komputer?",
-      answer: null,
+      answer: (
+        <div>
+          <p className="text-muted-foreground pt-0 pb-4 text-balance">
+            Plasgos CRM berbasis web, jadi kamu bisa langsung akses dari browser
+            — tanpa instalasi, tanpa ribet. Cukup buka laptop atau HP, login ke
+            dashboard, dan semua fitur siap digunakan.
+          </p>
+        </div>
+      ),
     },
     {
       question: "Saya Gaptek, Apa Ada Panduannya?",
-      answer: null,
+      answer: (
+        <div>
+          <p className="text-muted-foreground pt-0 pb-4 text-balance">
+            Tenang, kami siap bantu dari A–Z, Plasgos dirancang untuk orang awam
+            sekalipun. panduan langkah demi langkah, dan tim support kami juga
+            siap dampingi kamu lewat chat. Gak perlu ngerti teknis, yang penting
+            siap jualan 😎
+          </p>
+        </div>
+      ),
     },
   ];
 
@@ -72,7 +106,7 @@ function CrmFaqSection() {
               </p>
               <div className="flex justify-center md:justify-start">
                 <img
-                  src="/crm/assets/questions-amico-CzmF04nc.svg"
+                  src="/crm/questions-amico-CzmF04nc.svg"
                   alt="growth"
                   className="w-[300px] object-contain md:mt-10 md:w-[350px]"
                 />
@@ -86,7 +120,7 @@ function CrmFaqSection() {
                   key={index}
                   data-state={openIndex === index ? "open" : "closed"}
                   data-orientation="vertical"
-                  className={`my-3 rounded-lg border p-3 ${
+                  className={`my-3 rounded-lg border border-gray-300 p-3 ${
                     openIndex === index
                       ? "bg-linear-to-b from-sky-50 to-orange-100"
                       : "bg-neutral-50"
